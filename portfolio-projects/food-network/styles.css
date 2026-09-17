@@ -508,6 +508,165 @@ button {
   margin: 0;
 }
 
+.food-directory {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.food-directory-toolbar {
+  margin-bottom: 28px;
+}
+
+.food-filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.food-filter {
+  border: 1px solid var(--border);
+  background: white;
+  color: var(--text);
+  border-radius: 999px;
+  padding: 9px 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.food-filter.active {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+  color: white;
+}
+
+.food-directory-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.food-country-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 22px 20px;
+  box-shadow: 0 18px 28px rgba(17, 12, 9, 0.04);
+}
+
+.food-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.food-country {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(242, 106, 46, 0.1);
+  color: var(--primary-dark);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.food-price {
+  color: var(--primary-dark);
+  font-weight: 800;
+}
+
+.food-country-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+}
+
+.food-country-card p {
+  margin: 0 0 14px;
+  color: var(--muted);
+}
+
+.food-meta-list {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  display: grid;
+  gap: 8px;
+}
+
+.food-meta-list strong {
+  color: var(--text);
+}
+
+.chatbot-section {
+  background: linear-gradient(180deg, rgba(255, 247, 233, 0.7), rgba(255,255,255,0.5));
+}
+
+.chatbot-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 26px;
+  align-items: center;
+}
+
+.chatbot-copy p {
+  color: var(--muted);
+  max-width: 520px;
+}
+
+.chatbot-panel {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  box-shadow: 0 22px 35px rgba(27, 21, 17, 0.06);
+  padding: 20px;
+}
+
+.chatbot-messages {
+  display: grid;
+  gap: 12px;
+  min-height: 240px;
+  max-height: 320px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.message {
+  max-width: 85%;
+  padding: 12px 14px;
+  border-radius: 16px;
+  line-height: 1.5;
+}
+
+.message.bot {
+  background: rgba(242, 106, 46, 0.08);
+  color: var(--text);
+  border-top-left-radius: 4px;
+}
+
+.message.user {
+  margin-left: auto;
+  background: var(--primary-dark);
+  color: white;
+  border-top-right-radius: 4px;
+}
+
+.chatbot-form {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.chatbot-form input {
+  flex: 1;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 14px 18px;
+  font: inherit;
+  color: var(--text);
+}
+
 .process-section {
   background: linear-gradient(180deg, rgba(255, 247, 233, 0.7), rgba(255,255,255,0.4));
 }

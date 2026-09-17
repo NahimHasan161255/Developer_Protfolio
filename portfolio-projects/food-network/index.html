@@ -199,6 +199,58 @@
         </div>
       </section>
 
+      <section class="section food-directory">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow-dark">Global favorites</p>
+            <h2>Popular food from around the world</h2>
+          </div>
+
+          <div class="food-directory-toolbar">
+            <div class="food-filter-group" aria-label="Country food filters">
+              <button class="food-filter active" data-food-filter="all" type="button">All</button>
+              <button class="food-filter" data-food-filter="asia" type="button">Asia</button>
+              <button class="food-filter" data-food-filter="europe" type="button">Europe</button>
+              <button class="food-filter" data-food-filter="americas" type="button">Americas</button>
+              <button class="food-filter" data-food-filter="africa" type="button">Africa</button>
+            </div>
+          </div>
+
+          <div id="food-directory" class="food-directory-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="section chatbot-section">
+        <div class="container chatbot-layout">
+          <div class="chatbot-copy">
+            <p class="eyebrow eyebrow-dark">Food assistant</p>
+            <h2>Ask about dishes, recipes, restaurants, and prices.</h2>
+            <p>
+              Get quick answers about famous foods, restaurant picks, local food spots,
+              recipe ideas, and popular dishes by country.
+            </p>
+          </div>
+
+          <div class="chatbot-panel" aria-label="Food chatbot">
+            <div id="chatbot-messages" class="chatbot-messages">
+              <div class="message bot">
+                Hi! Ask me about famous dishes, restaurant suggestions, recipes, or prices.
+              </div>
+            </div>
+
+            <form id="chatbot-form" class="chatbot-form">
+              <input
+                id="chatbot-input"
+                type="text"
+                placeholder="Example: What is famous in Japan?"
+                aria-label="Ask the food assistant"
+              />
+              <button type="submit" class="btn btn-primary">Ask</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
       <section class="section process-section">
         <div class="container">
           <div class="section-heading center">
