@@ -16,6 +16,10 @@ siteNav.querySelectorAll('a').forEach((link) => link.addEventListener('click', c
 const modal = document.querySelector('.project-modal');
 const modalImage = modal.querySelector('img');
 const modalTitle = modal.querySelector('#modal-title');
+const modalDescription = modal.querySelector('#modal-description');
+const modalTags = modal.querySelector('#modal-tags');
+const modalLive = modal.querySelector('#modal-live');
+const modalGithub = modal.querySelector('#modal-github');
 const modalClose = modal.querySelector('.modal-close');
 
 const closeModal = () => {
@@ -25,9 +29,30 @@ const closeModal = () => {
 
 document.querySelectorAll('.project-image').forEach((project) => {
   project.addEventListener('click', () => {
+    const card = project.closest('.project-card');
+    const info = card?.querySelector('.project-info');
+    const title = project.dataset.title || info?.querySelector('h3')?.textContent || 'Project';
+    const description = info?.querySelector('p')?.textContent || 'Project overview';
+    const tagItems = Array.from(info?.querySelectorAll('.tag-list span') || []);
+    const projectLinks = Array.from(card?.querySelectorAll('.project-links a') || []);
+
     modalImage.src = project.dataset.image;
-    modalImage.alt = project.dataset.title;
-    modalTitle.textContent = project.dataset.title;
+    modalImage.alt = title;
+    modalTitle.textContent = title;
+    modalDescription.textContent = description;
+
+    modalTags.innerHTML = '';
+    tagItems.forEach((tag) => {
+      const item = document.createElement('span');
+      item.textContent = tag.textContent.trim();
+      modalTags.appendChild(item);
+    });
+
+    const liveHref = projectLinks[0]?.href || '#';
+    const githubHref = projectLinks[1]?.href || '#';
+    modalLive.href = liveHref;
+    modalGithub.href = githubHref;
+
     modal.showModal();
     document.body.classList.add('modal-open');
   });

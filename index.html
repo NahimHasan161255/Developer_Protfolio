@@ -40,7 +40,22 @@
       <section id="contact" class="contact section-shell section-rule"><div class="contact-panel"><p class="eyebrow"><span class="status-dot"></span> Have a project in mind?</p><h2>Let's make something <em>useful.</em></h2><a class="contact-email" href="mailto:nahimhasanmidul@gmail.com">nahimhasanmidul@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-footer"><span>Matsue, Shimane, Japan</span><span>090-2914-8012</span><span><a href="https://www.linkedin.com/in/nahim-hasan-262433232/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></span></div></div></section>
     </main>
     <footer class="site-footer section-shell"><span>© 2026 Nahim Hasan</span><span>Built with intent, curiosity and plain HTML.</span><a href="#top">Back to top ↑</a></footer>
-    <dialog class="project-modal" aria-labelledby="modal-title"><button class="modal-close" type="button" aria-label="Close project preview">×</button><img src="" alt="" /><p id="modal-title"></p></dialog>
+    <dialog class="project-modal" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" aria-label="Close project preview">×</button>
+      <div class="project-modal-shell">
+        <img src="" alt="" />
+        <div class="project-modal-content">
+          <p class="project-modal-label">Selected project</p>
+          <h3 id="modal-title"></h3>
+          <p id="modal-description"></p>
+          <div id="modal-tags" class="tag-list"></div>
+          <div class="project-modal-links">
+            <a id="modal-live" href="#" target="_blank" rel="noreferrer">Live demo</a>
+            <a id="modal-github" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </dialog>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
