@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike Store</title>
+    <meta
+      name="description"
+      content="Bike Store premium bicycle landing page with product catalog and rider-focused design."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Bike Store home">
+          <span class="brand-mark">B</span>
+          <span>Bike Store</span>
+        </a>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#shop">Shop</a>
+          <a href="#features">Features</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+          <div class="cart-pill" aria-label="Cart summary">
+            <span>Cart</span>
+            <strong id="cart-count">0</strong>
+          </div>
+          <a href="#shop" class="btn btn-primary">Buy now</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Ride beyond limits</p>
+            <h1>Built for speed, comfort, and everyday adventure.</h1>
+            <p class="lead">
+              Discover premium bikes designed for city rides, weekend escapes, and the freedom of moving faster and farther.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#shop" class="btn btn-primary">Shop bikes</a>
+              <a href="#features" class="btn btn-secondary">Explore features</a>
+            </div>
+
+            <ul class="hero-metrics" aria-label="Bike store metrics">
+              <li><strong>10k+</strong><span>happy riders</span></li>
+              <li><strong>2 years</strong><span>warranty</span></li>
+              <li><strong>48h</strong><span>delivery</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="bike-card">
+              <img src="assets/bike-1.png" alt="Mountain bike product shot" />
+              <div class="bike-card-info">
+                <span class="tag">New arrival</span>
+                <h3>Summit X1</h3>
+                <p>Mountain performance for smooth, confident riding.</p>
+              </div>
+            </div>
+
+            <div class="floating-pill top-pill">Free assembly</div>
+            <div class="floating-pill bottom-pill">4.9 rating</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-strip">
+        <div class="container feature-list">
+          <div><span>⚡</span><p>Fast shipping</p></div>
+          <div><span>🛠️</span><p>Expert setup</p></div>
+          <div><span>💪</span><p>Durable frames</p></div>
+          <div><span>🔒</span><p>Secure checkout</p></div>
+        </div>
+      </section>
+
+      <section id="shop" class="section shop-section">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow eyebrow-dark">Popular choices</p>
+            <h2>Find the right bike for your ride.</h2>
+          </div>
+
+          <div class="shop-filters" aria-label="Product filters">
+            <button class="shop-btn active" data-filter="all" type="button">All</button>
+            <button class="shop-btn" data-filter="city" type="button">City</button>
+            <button class="shop-btn" data-filter="mountain" type="button">Mountain</button>
+            <button class="shop-btn" data-filter="road" type="button">Road</button>
+          </div>
+
+          <div class="product-grid">
+            <article class="product-card" data-category="city">
+              <img src="assets/bike-2.png" alt="City bike" />
+              <div class="product-info">
+                <div class="product-row">
+                  <h3>Urban Glide</h3>
+                  <span>$1,299</span>
+                </div>
+                <p>Lightweight city bike for smooth everyday travel.</p>
+                <button class="mini-btn" data-add-cart type="button">Add to cart</button>
+              </div>
+            </article>
+
+            <article class="product-card highlighted" data-category="mountain">
+              <img src="assets/bike-1.png" alt="Mountain bike" />
+              <div class="product-info">
+                <div class="product-row">
+                  <h3>Summit X1</h3>
+                  <span>$1,899</span>
+                </div>
+                <p>Trail-ready power with control, balance, and comfort.</p>
+                <button class="mini-btn" data-add-cart type="button">Add to cart</button>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="road">
+              <img src="assets/bike-2.png" alt="Road bike" />
+              <div class="product-info">
+                <div class="product-row">
+                  <h3>Velocity Pro</h3>
+                  <span>$1,699</span>
+                </div>
+                <p>Precision performance for longer, faster rides.</p>
+                <button class="mini-btn" data-add-cart type="button">Add to cart</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section feature-section">
+        <div class="container">
+          <div class="section-head center">
+            <p class="eyebrow eyebrow-dark">Why riders choose us</p>
+            <h2>Premium quality without the hassle.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <div class="feature-card">
+              <span class="feature-number">01</span>
+              <h3>High-performance frames</h3>
+              <p>Built in durable materials that stay dependable mile after mile.</p>
+            </div>
+            <div class="feature-card">
+              <span class="feature-number">02</span>
+              <h3>Comfort-first design</h3>
+              <p>Responsive geometry and components made for real riders.</p>
+            </div>
+            <div class="feature-card">
+              <span class="feature-number">03</span>
+              <h3>Trusted service</h3>
+              <p>Support and guidance from riders who know the gear.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="section review-section">
+        <div class="container">
+          <div class="section-head center">
+            <p class="eyebrow eyebrow-dark">Customer love</p>
+            <h2>Riders keep coming back.</h2>
+          </div>
+
+          <div class="review-grid">
+            <blockquote>
+              “The frame feels premium, the ride is smooth, and the quality exceeded my expectations.”
+              <footer>— Mia R.</footer>
+            </blockquote>
+            <blockquote>
+              “Fast delivery, simple setup, and a bike that feels amazing on both roads and trails.”
+              <footer>— Daniel T.</footer>
+            </blockquote>
+            <blockquote>
+              “I bought this for commuting and weekend rides. It looks sharp and performs even better.”
+              <footer>— Arif S.</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container cta-box">
+          <div>
+            <p class="eyebrow">Ready to ride</p>
+            <h2>Find your perfect bike today.</h2>
+          </div>
+          <a href="#contact" class="btn btn-primary light">Get started</a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="#home" class="brand brand-footer">
+            <span class="brand-mark">B</span>
+            <span>Bike Store</span>
+          </a>
+        </div>
+
+        <div class="footer-links">
+          <a href="#shop">Shop</a>
+          <a href="#features">Features</a>
+          <a href="#reviews">Reviews</a>
+          <a href="mailto:hello@bikestore.com">hello@bikestore.com</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
