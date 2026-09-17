@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medical System</title>
+    <meta
+      name="description"
+      content="Medical System dashboard for patient care, appointments, and reporting."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-row">
+          <div class="brand-mark">M</div>
+          <div>
+            <p class="brand-label">Clinic</p>
+            <h2>MediCare</h2>
+          </div>
+        </div>
+
+        <nav class="sidebar-nav" aria-label="Main navigation">
+          <a class="nav-item active" href="#overview">Overview</a>
+          <a class="nav-item" href="#appointments">Appointments</a>
+          <a class="nav-item" href="#patients">Patients</a>
+          <a class="nav-item" href="#records">Records</a>
+          <a class="nav-item" href="#reports">Reports</a>
+        </nav>
+
+        <div class="sidebar-card">
+          <p class="mini-label">Support</p>
+          <h3>Need fast help?</h3>
+          <p>Call the care line or start a new case.</p>
+          <button class="secondary-btn">Open ticket</button>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">Good morning</p>
+            <h1>Welcome back, Dr. Taylor</h1>
+          </div>
+
+          <div class="topbar-actions">
+            <div class="search-row">
+              <input id="patient-search" type="search" placeholder="Search patient" aria-label="Search patients" />
+            </div>
+            <button class="ghost-btn">Export</button>
+            <button class="primary-btn">+ New patient</button>
+          </div>
+        </header>
+
+        <section class="stats-grid" id="overview">
+          <article class="stat-card accent">
+            <div>
+              <p class="mini-label">Patients today</p>
+              <h3>128</h3>
+            </div>
+            <span class="trend up">+12.4%</span>
+          </article>
+
+          <article class="stat-card">
+            <div>
+              <p class="mini-label">Consultations</p>
+              <h3>46</h3>
+            </div>
+            <span class="trend up">+8.6%</span>
+          </article>
+
+          <article class="stat-card">
+            <div>
+              <p class="mini-label">Emergency</p>
+              <h3>09</h3>
+            </div>
+            <span class="trend down">-2.1%</span>
+          </article>
+
+          <article class="stat-card">
+            <div>
+              <p class="mini-label">Avg. wait</p>
+              <h3>14 min</h3>
+            </div>
+            <span class="trend up">+3.3%</span>
+          </article>
+        </section>
+
+        <section class="content-grid">
+          <div class="panel large-panel" id="appointments">
+            <div class="panel-header">
+              <div>
+                <p class="mini-label">Schedule</p>
+                <h2>Appointments</h2>
+              </div>
+              <a href="#" class="text-link">View all</a>
+            </div>
+
+            <div class="appointment-list">
+              <div class="appointment-row">
+                <div class="patient-core">
+                  <div class="avatar green">AR</div>
+                  <div>
+                    <h4>Amelia Ross</h4>
+                    <p>Cardiology checkup</p>
+                  </div>
+                </div>
+                <span class="time-pill">09:00</span>
+              </div>
+
+              <div class="appointment-row">
+                <div class="patient-core">
+                  <div class="avatar blue">JS</div>
+                  <div>
+                    <h4>James Stone</h4>
+                    <p>Lab review</p>
+                  </div>
+                </div>
+                <span class="time-pill">10:30</span>
+              </div>
+
+              <div class="appointment-row">
+                <div class="patient-core">
+                  <div class="avatar orange">NA</div>
+                  <div>
+                    <h4>Noah Adams</h4>
+                    <p>Follow-up visit</p>
+                  </div>
+                </div>
+                <span class="time-pill">12:00</span>
+              </div>
+
+              <div class="appointment-row">
+                <div class="patient-core">
+                  <div class="avatar purple">LM</div>
+                  <div>
+                    <h4>Lily Moore</h4>
+                    <p>Nutrition plan</p>
+                  </div>
+                </div>
+                <span class="time-pill">14:15</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel info-panel">
+            <div class="panel-header">
+              <div>
+                <p class="mini-label">Next patient</p>
+                <h2>Olivia White</h2>
+              </div>
+              <span class="status-badge">On track</span>
+            </div>
+
+            <img
+              src="assets/medL1.png"
+              alt="Doctor and patient consultation illustration"
+              class="feature-image"
+            />
+
+            <div class="detail-list">
+              <div>
+                <span>Condition</span>
+                <strong>Routine check</strong>
+              </div>
+              <div>
+                <span>Room</span>
+                <strong>Room 12</strong>
+              </div>
+              <div>
+                <span>Time</span>
+                <strong>11:45 AM</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bottom-grid">
+          <div class="panel" id="patients">
+            <div class="panel-header">
+              <div>
+                <p class="mini-label">Patients</p>
+                <h2>Recent records</h2>
+              </div>
+            </div>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-name="Emma Clark">
+                  <td>Emma Clark</td>
+                  <td>Cardio</td>
+                  <td><span class="status good">Stable</span></td>
+                </tr>
+                <tr data-name="Daniel King">
+                  <td>Daniel King</td>
+                  <td>Neurology</td>
+                  <td><span class="status warning">Review</span></td>
+                </tr>
+                <tr data-name="Sophia Lane">
+                  <td>Sophia Lane</td>
+                  <td>Pediatrics</td>
+                  <td><span class="status good">Stable</span></td>
+                </tr>
+                <tr data-name="Lucas Young">
+                  <td>Lucas Young</td>
+                  <td>Dermatology</td>
+                  <td><span class="status bad">Critical</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="panel reports-panel" id="reports">
+            <div class="panel-header">
+              <div>
+                <p class="mini-label">Analytics</p>
+                <h2>Monthly outlook</h2>
+              </div>
+            </div>
+
+            <div class="chart-box">
+              <div class="bars">
+                <span style="height: 34%"></span>
+                <span style="height: 48%"></span>
+                <span style="height: 60%"></span>
+                <span style="height: 54%"></span>
+                <span style="height: 72%"></span>
+                <span style="height: 84%"></span>
+                <span style="height: 96%"></span>
+              </div>
+              <div class="chart-labels">
+                <span>Jan</span>
+                <span>Feb</span>
+                <span>Mar</span>
+                <span>Apr</span>
+                <span>May</span>
+                <span>Jun</span>
+                <span>Jul</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

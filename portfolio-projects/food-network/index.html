@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Network</title>
+    <meta
+      name="description"
+      content="Food Network - a modern food landing page for healthy choices, fast delivery, and delicious meals."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Food Network home">
+          <span class="brand-mark">FN</span>
+          <span>Food Network</span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+          <div class="cart-pill" aria-label="Cart summary">
+            <span>Cart</span>
+            <strong id="cart-count">0</strong>
+          </div>
+          <a href="#order" class="btn btn-primary nav-cta">Order Now</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Fresh • Fast • Flavorful</p>
+            <h1>Healthy meals for your everyday life.</h1>
+            <p class="lead">
+              Delicious food designed around your routine, from energizing breakfasts
+              to satisfying dinners delivered in minutes.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#order" class="btn btn-primary">Order now</a>
+              <a href="#menu" class="btn btn-secondary">Browse menu</a>
+            </div>
+
+            <ul class="hero-stats" aria-label="Food Network stats">
+              <li><strong>12k+</strong><span>happy meals</span></li>
+              <li><strong>4.9/5</strong><span>rating</span></li>
+              <li><strong>20 min</strong><span>delivery</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Featured food illustration area">
+            <div class="food-card food-card-main">
+              <img
+                src="assets/Project%20Cover1.jpg"
+                alt="Bowl with healthy food"
+              />
+              <div class="food-card-info">
+                <span class="tag">Chef special</span>
+                <h3>Garden Bowl</h3>
+                <p>Fresh greens, grains, and protein</p>
+              </div>
+            </div>
+
+            <div class="mini-card mini-card-top">
+              <span>🔥 120 kcal</span>
+            </div>
+
+            <div class="mini-card mini-card-bottom">
+              <span>Free delivery</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-strip">
+        <div class="container feature-list">
+          <div>
+            <span class="feature-icon">✓</span>
+            <p>Fresh ingredients</p>
+          </div>
+          <div>
+            <span class="feature-icon">✓</span>
+            <p>Nutritious meals</p>
+          </div>
+          <div>
+            <span class="feature-icon">✓</span>
+            <p>Fast delivery</p>
+          </div>
+          <div>
+            <span class="feature-icon">✓</span>
+            <p>Easy ordering</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="section menu-section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow eyebrow-dark">Popular picks</p>
+            <h2>Favorite meals for every mood</h2>
+          </div>
+
+          <div class="menu-filters" aria-label="Menu filter controls">
+            <button class="filter-btn active" data-filter="all" type="button">All</button>
+            <button class="filter-btn" data-filter="healthy" type="button">Healthy</button>
+            <button class="filter-btn" data-filter="signature" type="button">Signature</button>
+            <button class="filter-btn" data-filter="classic" type="button">Classic</button>
+          </div>
+
+          <div class="menu-grid">
+            <article class="dish-card" data-category="healthy">
+              <img src="assets/Project%20Cover2.png" alt="Salmon dish" />
+              <div class="dish-content">
+                <div class="dish-topline">
+                  <h3>Salmon Glow</h3>
+                  <span>$18</span>
+                </div>
+                <p>Grilled salmon with quinoa, greens, and citrus dressing.</p>
+                <button class="small-btn" data-add-cart type="button">Add to cart</button>
+              </div>
+            </article>
+
+            <article class="dish-card featured" data-category="signature">
+              <img src="assets/Project%20Cover3.png" alt="Burger meal" />
+              <div class="dish-content">
+                <div class="dish-topline">
+                  <h3>Smash Burger</h3>
+                  <span>$16</span>
+                </div>
+                <p>Juicy beef, melted cheese, crunchy lettuce and toasted bun.</p>
+                <button class="small-btn" data-add-cart type="button">Add to cart</button>
+              </div>
+            </article>
+
+            <article class="dish-card" data-category="classic">
+              <img src="assets/Project%20Cover1.jpg" alt="Asian rice bowl" />
+              <div class="dish-content">
+                <div class="dish-topline">
+                  <h3>Teriyaki Bowl</h3>
+                  <span>$17</span>
+                </div>
+                <p>Rice, vegetables, savory sauce, and grilled chicken.</p>
+                <button class="small-btn" data-add-cart type="button">Add to cart</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="container about-grid">
+          <div class="about-image">
+            <img src="assets/Project%20Cover2.png" alt="Healthy food spread" />
+          </div>
+
+          <div class="about-text">
+            <p class="eyebrow eyebrow-dark">Why choose us</p>
+            <h2>Made with care for real eating habits.</h2>
+            <p>
+              We believe food should support your energy, your goals, and your day.
+              Every dish is created with balance, flavor, and convenience in mind.
+            </p>
+
+            <div class="check-list">
+              <div>
+                <span>✔</span>
+                <p>Balanced nutrition and portion control</p>
+              </div>
+              <div>
+                <span>✔</span>
+                <p>Chef-curated seasonal menu selections</p>
+              </div>
+              <div>
+                <span>✔</span>
+                <p>Simple, secure online ordering experience</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process-section">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow eyebrow-dark">How it works</p>
+            <h2>From craving to cravings solved</h2>
+          </div>
+
+          <div class="steps-grid">
+            <div class="step-card">
+              <span class="step-number">01</span>
+              <h3>Choose</h3>
+              <p>Select your favorite meal from our healthy menu.</p>
+            </div>
+            <div class="step-card">
+              <span class="step-number">02</span>
+              <h3>Customize</h3>
+              <p>Pick ingredients, portions, and preferences you love.</p>
+            </div>
+            <div class="step-card">
+              <span class="step-number">03</span>
+              <h3>Enjoy</h3>
+              <p>Fresh food arrives fast and tastes like it was made for you.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="reviews" class="section reviews-section">
+        <div class="container">
+          <div class="section-heading center">
+            <p class="eyebrow eyebrow-dark">Customer reviews</p>
+            <h2>People keep coming back for more</h2>
+          </div>
+
+          <div class="reviews-grid">
+            <blockquote>
+              “The meals are fresh, filling, and beautifully presented. It feels premium but easy.”
+              <footer>— Sarah M.</footer>
+            </blockquote>
+            <blockquote>
+              “I ordered for a busy week and the quality stayed consistent. Highly recommended.”
+              <footer>— Leo D.</footer>
+            </blockquote>
+            <blockquote>
+              “Fast delivery, great taste, and the portions are exactly what I need.”
+              <footer>— Aisha K.</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section id="order" class="cta-section">
+        <div class="container cta-box">
+          <div>
+            <p class="eyebrow">Ready to taste better?</p>
+            <h2>Get your first meal at a discount.</h2>
+          </div>
+          <a href="#contact" class="btn btn-primary">Order today</a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="#home" class="brand brand-footer">
+            <span class="brand-mark">FN</span>
+            <span>Food Network</span>
+          </a>
+        </div>
+
+        <div class="footer-links">
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#reviews">Reviews</a>
+          <a href="mailto:hello@foodnetwork.com">hello@foodnetwork.com</a>
+        </div>
+
+        <p>© <span id="year"></span> Food Network</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
